@@ -5,10 +5,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Background with space theme */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <Image src="/space-background.png" alt="Space background" fill className="object-cover opacity-80" priority />
-      </div>
-
       {/* Header */}
       <header className="relative z-10 flex items-center justify-between p-4 md:p-6">
         <div className="flex items-center gap-2">
@@ -173,23 +169,9 @@ export default function Home() {
                   <Image src="/pudgy-icon.png" alt="Pudgy" width={24} height={24} />
                   <span>Pudgy Penguins</span>
                 </div>
-                <button>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <line x1="4" y1="12" x2="20" y2="12"></line>
-                    <line x1="4" y1="6" x2="20" y2="6"></line>
-                    <line x1="4" y1="18" x2="20" y2="18"></line>
-                  </svg>
-                </button>
+                <div className="flex items-center">
+                  <Image src="/solana-icon.png" alt="Ethereum" width={16} height={16} />
+                </div>
               </div>
 
               <div className="grid grid-cols-2 gap-2 text-sm mb-4">
@@ -286,19 +268,7 @@ export default function Home() {
                   <span>Brett</span>
                 </div>
                 <div className="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                  </svg>
+                  <Image src="/brett-coin-icon.png" alt="Ethereum" width={16} height={16} />
                 </div>
               </div>
 
